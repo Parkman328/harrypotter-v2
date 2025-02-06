@@ -17,6 +17,7 @@ import { pictionaryWords } from './data/pictionaryWords';
 import { spellPatterns } from './data/spellPatterns';
 import { potionRecipes } from './data/potionRecipes';
 import type { GameModeType } from './data/gameTypes';
+import { Footer } from './components/layout/Footer';
 
 function App() {
   const [gameMode, setGameMode] = useState<GameModeType>(null);
@@ -74,6 +75,7 @@ function App() {
           </Routes>
         </main>
         <ChatAssistant />
+        <Footer />
       </div>
     </Router>
   );

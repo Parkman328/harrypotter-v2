@@ -1,4 +1,4 @@
-import * as XLSX from 'xlsx';
+import * as XLSX from 'exceljs';
 import type { LeaderboardEntry } from '../../types/leaderboard';
 
 export const exportToExcel = (data: LeaderboardEntry[], filename: string) => {

@@ -14,11 +14,10 @@ export const Header: React.FC = () => {
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-3">
             <Logo />
-            <div className="h-8 w-px bg-[#CBA135]/20" />
             <div className="flex items-center gap-3">
               <Wand2 className="w-6 h-6 text-[#CBA135]" />
               <h1 className="text-xl font-serif text-[#CBA135]">
-                Wizarding Games
+                Wizard AI Games
               </h1>
             </div>
           </div>
