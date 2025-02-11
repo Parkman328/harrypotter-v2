@@ -16,8 +16,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   isDisabled,
 }) => {
   return (
-    <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-xl">
-      <h3 className="text-2xl font-bold text-amber-900 mb-6">{question.question}</h3>
+    <div className="bg-white backdrop-blur-sm rounded-xl p-8 shadow-xl">
+      <h3 className="text-2xl font-bold text-amber-800 mb-6">{question.question}</h3>
       <div className="grid grid-cols-1 gap-4">
         {question.options.map((option) => (
           <Button
@@ -28,10 +28,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               selectedAnswer === null
                 ? 'secondary'
                 : option === question.correctAnswer
-                ? 'primary'
-                : selectedAnswer === option
-                ? 'danger'
-                : 'secondary'
+                  ? 'primary'
+                  : selectedAnswer === option
+                    ? 'danger'
+                    : 'secondary'
             }
             className="w-full text-left justify-start h-14"
           >

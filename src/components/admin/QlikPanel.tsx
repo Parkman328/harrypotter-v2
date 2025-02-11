@@ -8,22 +8,22 @@ interface QlikPanelProps {
 
 export const QlikPanel: React.FC<QlikPanelProps> = ({ type }) => {
   const isKnowledgeBase = type === 'knowledge-base';
-  
+
   return (
-    <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+    <div className="bg-[#CBA135]/10 backdrop-blur-sm rounded-xl p-8 shadow-xl">
       <div className="flex items-center gap-3 mb-4">
         {isKnowledgeBase ? (
-          <BookOpen className="w-6 h-6 text-amber-600" />
+          <BookOpen className="w-6 h-6 text-[#CBA135]" />
         ) : (
-          <MessageSquare className="w-6 h-6 text-amber-600" />
+          <MessageSquare className="w-6 h-6 text-[#CBA135]" />
         )}
-        <h2 className="text-xl font-bold text-amber-900">
+        <h2 className="text-xl font-bold text-[#CBA135]">
           {isKnowledgeBase ? 'Qlik Knowledge Base' : 'Qlik Answers API'}
         </h2>
       </div>
 
       <div className="space-y-4">
-        <div className="p-4 bg-amber-50/50 rounded-lg">
+        <div className="bg-amber-50 p-4 rounded-lg">
           <h3 className="font-semibold text-amber-900 mb-2">
             {isKnowledgeBase ? 'Recent Articles' : 'API Status'}
           </h3>
@@ -46,7 +46,7 @@ export const QlikPanel: React.FC<QlikPanelProps> = ({ type }) => {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <span className="text-amber-800">API Version</span>
-                <span className="font-medium text-amber-900">v2.1.0</span>
+                <span className="font-medium text-amber-800">v2.1.0</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-amber-800">Status</span>

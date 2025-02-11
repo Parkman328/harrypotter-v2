@@ -11,7 +11,7 @@ export const LoginForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    
+
     const success = await login(username, password);
     if (!success) {
       setError('Invalid credentials');
@@ -19,16 +19,16 @@ export const LoginForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-xl">
-      <h2 className="text-2xl font-bold text-amber-900 mb-6">Admin Login</h2>
+    <div className="max-w-md mx-auto bg-[#CBA135]/10 backdrop-blur-sm rounded-xl p-8 shadow-xl">
+      <h2 className="text-2xl font-bold text-[#CBA135] mb-6">Admin Login</h2>
       {error && (
-        <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg">
+        <div className="mb-4 p-3 bg-red-100 text-[#CBA135] rounded-lg">
           {error}
         </div>
       )}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="username" className="block text-sm font-medium text-amber-900 mb-1">
+          <label htmlFor="username" className="block text-sm font-medium text-[#CBA135] mb-1">
             Username
           </label>
           <input
@@ -36,11 +36,11 @@ export const LoginForm: React.FC = () => {
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="w-full px-3 py-2 border border-amber-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+            className="w-full px-3 py-2 border border-amber-200 rounded-lg focus:ring-2 focus:ring-[#CBA135] focus:border-transparent"
           />
         </div>
         <div>
-          <label htmlFor="password" className="block text-sm font-medium text-amber-900 mb-1">
+          <label htmlFor="password" className="block text-sm font-medium text-[#CBA135] mb-1">
             Password
           </label>
           <input

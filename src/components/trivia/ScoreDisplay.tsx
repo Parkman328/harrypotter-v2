@@ -12,7 +12,7 @@ export const ScoreDisplay: React.FC<ScoreDisplayProps> = ({
   questionNumber,
 }) => {
   return (
-    <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 mb-6 flex justify-between items-center">
+    <div className="bg-white backdrop-blur-sm rounded-xl p-4 mb-6 flex justify-between items-center">
       <span className="text-amber-800 font-semibold">
         Question {questionNumber}/{total}
       </span>
